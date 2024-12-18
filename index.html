@@ -2,9 +2,6 @@
 <html lang="vi">
 
 <head>
-    <script
-        src="https://messenger.svc.chative.io/static/v1.0/channels/sfec637c8-9178-4319-bbdf-da0b70ff8c93/messenger.js?mode=livechat"
-        defer="defer"></script>
     <meta charset="UTF-8">
     <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -195,24 +192,33 @@
         <body>
             <section class="contact-section">
                 <h2>Liên Hệ</h2>
-                <form class="contact-form" action="/submit_contact" method="POST">
-                    <label for="name">Tên của bạn:</label>
-                    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+                <!-- Form sử dụng endpoint formsubmit.co -->
+                <form class="contact-form" action="https://formsubmit.co/8fe9af33298620cd43c22b0d1dc201ba" method="POST"
+                    id=" waterform">
+                    <div class="formgroup" id="name-form">
+                        <label for="name">Tên của bạn:</label>
+                        <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                        <div class="formgroup" id="email-form">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
 
-                    <label for="message">Tin nhắn:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Nhập tin nhắn của bạn..."
-                        required></textarea>
+                            <div class="formgroup" id="message-form">
+                                <label for="message">Tin nhắn:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Nhập tin nhắn của bạn..."
+                                    required></textarea>
 
-                    <button type="submit">Gửi</button>
+
+                                <input type="hidden" name="_subject" value="Liên hệ từ website THPT Long Thành">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next"
+                                    value="https://www.facebook.com/profile.php?id=61570630803967">
+
+                                <button type="submit">Gửi</button>
                 </form>
                 <div class="contact-info">
                     <p>Bọn mình rất vui vì nhận được sự góp ý từ các bạn. Mọi thông tin sẽ được giữ bảo mật. Cảm ơn bạn
-                        đã
-                        liên
-                        hệ với chúng tôi!</p>
+                        đã liên hệ với chúng tôi!</p>
                     <p>Email của chúng tôi: <strong>hotrohslgbt@gmail.com</strong></p>
                     <p>Đoàn Trường THPT Long Thành: <a href="https://www.facebook.com/DoantruongTHPTLongThanh"
                             target="_blank">Facebook.com</a></p>
@@ -223,5 +229,6 @@
                 <p>&copy; 2024 THPT Long Thành Social and Behavioral Sciences Project. BY HVUDMINH</p>
             </footer>
         </body>
+
 
 </html>
