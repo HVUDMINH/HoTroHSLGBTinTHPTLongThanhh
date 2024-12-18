@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/469911771_558170787023798_8800145647102778558_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jZ1iwgPhxm4Q7kNvgElmaGJ&_nc_zt=23&_nc_ht=scontent.fsgn20-1.fna&_nc_gid=AG6sFfGjBXk9YVEbhzmi9cM&oh=00_AYBUnMgKoj30hC20LwRgq_FTDmDT0Seq9MF9DV3YZ2CehQ&oe=675F76AA');
+    background-image: url('https://raw.githubusercontent.com/HVUDMINH/File-Image/main/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -309,13 +309,15 @@ body {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form input:focus,
@@ -328,6 +330,7 @@ body {
 }
 
 .contact-form button {
+    width: 100%;
     background-color: #FF5A5F;
     color: white;
     border: none;
