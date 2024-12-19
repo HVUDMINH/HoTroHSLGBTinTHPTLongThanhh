@@ -189,6 +189,13 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-blue-text {
+    font-weight: bold;
+    background: linear-gradient(to right, #2d72e0, #2604ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Content Container */
 .content-container {
     display: flex;
