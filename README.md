@@ -1,1 +1,1 @@
-# HoTroHSLGBTinTHPTLongThanhh
+CÚT RA NGOÀI
